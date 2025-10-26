@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhat Puja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html p {
+            font-size: 15px;
+
+        }
+
+        body {
+            font-family: "Hind", sans-serif;
+            background-color: rgb(206, 249, 247);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            /* width: 1440px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            /* width: 1000px; */
+            border-radius: 10px;
+            padding: 10px;
+            background: hsl(175, 95%, 84%);
+            margin-top: 5%;
+            width: 100%;
+            max-width: 1200px;
+            margin: 5% auto;
+            padding: 10px;
+
+        }
+
+        .container {
+            align-items: start;
+          
+        }
+
+        .container>div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+           
+        }
+
+
+
+        /* kharna  kharna */
+        .container .kharna {
+            background-color: rgb(205, 254, 254);
+            border-radius: 10px;
+        }
+
+        .container .kharna .img {
+            background: url(https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/11/chhath-puja-1-1700272696.jpg);
+            background-size: cover;
+            background-position: center 80%;
+            width: 100%;
+            height: 300px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .container .kharna .description {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        .container .kharna .description .top h3 {
+            color: hsl(228, 12%, 48%);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .container .kharna .description .top h1 {
+            color: hsl(212, 71%, 19%);
+            font-family: "Hind", sans-serif;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .container .kharna .description .middle p {
+            color: hsl(228, 12%, 48%);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .container .kharna .description .button {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 30px;
+        }
+
+        .container .kharna .description .button a {
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 30px;
+            background: hsl(195, 41%, 47%);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            color: hsl(0, 0%, 100%);
+            border-radius: 20px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* sandhya Argh  sandhya Argh */
+        .container .shandyaArgh {
+            background-color: rgb(205, 254, 254);
+            border-radius: 10px;
+        }
+
+        .container .shandyaArgh .img {
+            background: url(https://files.prokerala.com/news/photos/imgs/1024/devotees-gather-in-large-number-to-perform-1810229.jpg);
+            background-size: cover;
+            background-position: center 80%;
+            width: 100%;
+            height: 300px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .container .shandyaArgh .description {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        .container .shandyaArgh .description .top h3 {
+            color: hsl(228, 12%, 48%);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .container .shandyaArgh .description .top h1 {
+            color: hsl(212, 71%, 19%);
+            font-family: "Hind", sans-serif;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .container .shandyaArgh .description .middle p {
+            color: hsl(228, 12%, 48%);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .container .shandyaArgh .description .button {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 30px;
+        }
+
+        .container .shandyaArgh .description .button a {
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 30px;
+            background: hsl(195, 41%, 47%);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            color: hsl(0, 0%, 100%);
+            border-radius: 20px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Prata Argh   Prata Argh */
+        .container .prataArgh {
+            background-color: rgb(205, 254, 254);
+            border-radius: 10px;
+        }
+
+        .container .prataArgh .img {
+            background: url(https://www.4to40.com/wp-content/uploads/2015/11/chhath-puja-images.jpg);
+            background-size: cover;
+            background-position: center 80%;
+
+            width: 100%;
+            height: 300px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .container .prataArgh .description {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        .container .prataArgh .description .top h3 {
+            color: hsl(228, 12%, 48%);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .container .prataArgh .description .top h1 {
+            color: hsl(212, 71%, 19%);
+            font-family: "Hind", sans-serif;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .container .prataArgh .description .middle p {
+            color: hsl(228, 12%, 48%);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .container .prataArgh .description .button {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 30px;
+        }
+
+        .container .prataArgh .description .button a {
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 30px;
+            background: hsl(195, 41%, 47%);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            color: hsl(0, 0%, 100%);
+            border-radius: 20px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+
+
+        /* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .container .kharna,
+  .container .shandyaArgh,
+  .container .prataArgh {
+    width: 100%;
+  }
+
+  .container .description {
+    padding: 20px;
+  }
+
+  .container .kharna .img,
+  .container .shandyaArgh .img,
+  .container .prataArgh .img {
+    height: 200px;
+  }
+
+  html p {
+    font-size: 14px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="kharna">
+
+            <div class="img"></div>
+
+            <div class="description">
+                <div class="top">
+                    <h3>पंचमी</h3>
+                    <h1>खरना पूजा</h1>
+                </div>
+                <div class="middle">
+                    <p>
+                        खरना छठ का दूसरा चरण है, जो 36 घंटे के निर्जला व्रत की शुरुआत करता है। प्रसाद ग्रहण करने के बाद
+                        व्रती अन्न-जल त्याग देते
+                        हैं। मान्यता है कि खरना पर बनी खीर मैया का आशीर्वाद है, जो संतान सुख, स्वास्थ्य और समृद्धि देती
+                        है। परिवार के सदस्यों को
+                        प्रसाद बांटने से घर में एकता और सुख आता है।
+                    </p>
+                </div>
+
+                <div class="button">
+
+                    <a href="#"><i class="fa-solid fa-hands-praying"></i>हमारे साथ शामिल होइए</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="shandyaArgh">
+
+            <div class="img"></div>
+
+            <div class="description">
+                <div class="top">
+                    <h3>षष्ठी</h3>
+                    <h1>संध्या अर्घ्य</h1>
+                </div>
+                <div class="middle">
+                    <p>
+                        छठ पूजा में संध्या अर्घ्य का महत्व बहुत अधिक है, क्योंकि यह छठ पर्व का सबसे मुख्य दिन माना जाता
+                        है। इस दिन डूबते सूर्य
+                        को अर्घ्य देकर, जीवन में आ रही परेशानियों को दूर करने और मनोकामनाओं की पूर्ति के लिए प्रार्थना
+                        की जाती है। यह व्रतियों
+                        को सकारात्मक ऊर्जा और शक्ति प्रदान करता है और संतान की दीर्घायु व अच्छी सेहत की कामना करता है।
+                    </p>
+                </div>
+
+                <div class="button">
+
+                    <a href="#"><i class="fa-solid fa-hands-praying"></i>हमारे साथ शामिल होइए</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="prataArgh">
+
+            <div class="img"></div>
+
+            <div class="description">
+                <div class="top">
+                    <h3>सप्तमी</h3>
+                    <h1>प्रात: अर्घ्य</h1>
+                </div>
+                <div class="middle">
+                    <p>
+                        छठ पूजा में 'प्रात': अर्घ्य' का अर्थ है उगते हुए सूर्य को जल चढ़ाना। यह छठ पूजा का चौथा और अंतिम
+                        दिन होता है, जिसे 'उषा
+                        अर्घ्य' भी कहते हैं। इस दिन व्रती सुबह जल्दी उठकर नदी या तालाब के किनारे जाते हैं और सूर्य के
+                        उदय होने पर उन्हें जल
+                        अर्पित करते हैं।
+                    </p>
+                </div>
+
+                <div class="button">
+
+                    <a href="#"><i class="fa-solid fa-hands-praying"></i>हमारे साथ शामिल होइए</a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
